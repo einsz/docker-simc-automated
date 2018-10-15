@@ -19,4 +19,8 @@ RUN rm -rf /simc
 RUN apk del curl gcc make g++ openssl-dev
 RUN rm -rf /var/cache/apk/*
 
+
+VOLUME /profiles
+VOLUME /outputs
+
 ENTRYPOINT ["/bin/simc"]
