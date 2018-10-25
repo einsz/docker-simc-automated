@@ -16,7 +16,7 @@ RUN mv /simc/engine/simc /bin/simc
 RUN rm -rf /simc
 
 # clean up
-RUN apk del curl gcc make g++ openssl-dev
+#RUN apk del curl gcc make g++ openssl-dev
 RUN rm -rf /var/cache/apk/*
 
 
